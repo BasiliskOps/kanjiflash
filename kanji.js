@@ -11,3 +11,10 @@ words = {
     雪辱: 'Revenge',
     悪魔: 'Demon'
 }
+
+data = Object.entries(words)
+
+function getRandomWord() {
+    randomKanji = data[Math.floor(Math.random() * data.length)]
+    kanji.innerHTML
+}
