@@ -15,10 +15,10 @@ body {
     width: 30%;
     margin-left: auto;
     margin-right: auto;
-    background: rgba(0, 0, 0, 0.4);
+    background:  rgba(252, 252, 252, 0.692);
 }
 .kanji {
-    background: rgba(0, 0, 0, 0.4);
+    background:  rgba(252, 252, 252, 0.692);
     border: solid 5px black;
     border-radius: 5px;
     text-align: center;
@@ -38,10 +38,10 @@ body {
     text-align: center;
     width: 45%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 150px;
     display: none;
     border-radius: 5px;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(252, 252, 252, 0.692);
     box-shadow:inset 2px 2px 2px 0px rgba(184, 0, 0, 0.5),
     7px 7px 20px 0px rgba(185, 0, 0, 0.1),
     4px 4px 5px 0px rgba(185, 1, 1, 0.1);
@@ -59,3 +59,23 @@ button {
 button:hover {
     transform: scale(1.1);
 }
+@media screen and (max-device-width: 500px) {
+
+    .container {
+        margin: 0 auto;
+        width: 150vw;
+    }
+  
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  
+  @media screen and (max-width: 780px) {
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+  }

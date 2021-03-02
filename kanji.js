@@ -64,4 +64,5 @@ nxt.addEventListener('keydown', event => {
         event.preventDefault()
         document.getElementById('go').click()
     }
+    console.log('keydown')
 })
