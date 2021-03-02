@@ -41,9 +41,6 @@ function getRandomWord() {
     meaning.innerHTML = `<h3>${randomKanji[1]}</h3>`
 }
 
-// checkButton.addEventListener('click', function() {
-//     meaning.style.display = 'block'
-// })
 
 checkButton.addEventListener('click', function() {
     if (meaning.style.display == 'block')
@@ -55,18 +52,13 @@ nextButton.addEventListener('click', function() {
     getRandomWord()
 })
 
-// nxt.addEventListener('keydown', function(e) {
-//     if (e.key == 39, 37) {
-//         button.click()
-//     }
-
-// })
 nxt.addEventListener('keydown', event => {
     if (event.key == "ArrowRight") {
         event.preventDefault()
         document.getElementById('go').click()
     }
 })
+
 nxt.addEventListener('keydown', event => {
     if (event.key == "ArrowLeft") {
         event.preventDefault()
